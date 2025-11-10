@@ -11,7 +11,7 @@ st.write("Predict your crop yield based on soil, weather, and region data")
 
 # --- LOAD MODEL ---
 try:
-    model = pickle.load(open("models/xgb_yield_model.pkl", "rb"))
+    model = pickle.load(open("xgb_yield_model.pkl", "rb"))
     st.success("✅ Model loaded successfully!")
 except Exception as e:
     st.error(f"❌ Model loading failed: {e}")
